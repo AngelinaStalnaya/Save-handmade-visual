@@ -1,5 +1,23 @@
-.commonBtn {
+.commonBtn.MuiButton-root {
     font-size: 25px;
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 700;
+    color: white;
+    background-color: #be0ab5;
+    border: 1px solid #be0ab5;
+    text-transform: none;
+}
+
+.commonBtn.MuiButton-root:hover {
+    background-color: #790373;
+    border: 1px solid #790373;
+}
+
+.commonBtn.MuiButton-root:focus {
+    background-color: #570b53;
+    border: 1px solid #be0ab5;
+}
+
+.commonBtn.MuiButton-root:active {
+    background-color: #801a7a;
+    border: 1px solid #570b53;
 }

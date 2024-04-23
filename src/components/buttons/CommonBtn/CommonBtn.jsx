@@ -1,11 +1,19 @@
 import * as React from "react";
 import { Button } from "@mui/material";
+import './CommonBtn.css'
 
 const CommonBtn = (props) => {
-
+  function handleClick(){
+    console.log('Common btn clicked')
+  }
 
   return (
-    <Button variant={props.variant} className="commonBtn" onClick={()=> alert('Clicked btn')}>
+    <Button 
+      variant={props.variant} 
+      className="commonBtn" 
+      classes='commonBtn' 
+      onClick={handleClick}
+      >
       {props.children}
     </Button>
   );
