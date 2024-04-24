@@ -12,7 +12,7 @@ const CommonBtn = (props) => {
       variant={props.variant} 
       className="commonBtn" 
       classes='commonBtn' 
-      onClick={handleClick}
+      onClick={props.function || handleClick}
       >
       {props.children}
     </Button>
