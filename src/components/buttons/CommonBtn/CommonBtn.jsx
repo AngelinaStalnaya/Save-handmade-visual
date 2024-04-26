@@ -11,8 +11,7 @@ const CommonBtn = (props) => {
     <Button 
       variant={props.variant} 
       className="commonBtn" 
-      classes='commonBtn' 
-      onClick={props.function || handleClick}
+      onClick={props.handleBtnClickFunc || handleClick}
       >
       {props.children}
     </Button>
